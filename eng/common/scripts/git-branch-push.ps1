@@ -105,7 +105,6 @@ else {
 $numberOfRetries = 10
 $needsRetry = $false
 $tryNumber = 0
-git pull $RemoteName $PRBranchName
 do
 {
     $needsRetry = $false
