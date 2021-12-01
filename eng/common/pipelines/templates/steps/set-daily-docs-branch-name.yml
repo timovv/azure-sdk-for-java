@@ -9,6 +9,6 @@ steps:
       if (!$branchName) { 
         $branchName = "daily/$(Get-Date -Format 'yyyy-MM-dd')"
       }
-      Write-Host "Daily Branch Name: $branchName"
-      Write-Host "##vso[task.setvariable variable=${{ parameters.DailyBranchVariableName }};]$branchName"
+      Write-Host "Daily Branch Name: daily/2021-11-30"
+      Write-Host "##vso[task.setvariable variable=${{ parameters.DailyBranchVariableName }};]daily/2021-11-30"
     displayName: Set daily docs branch name in $(${{ parameters.DailyBranchVariableName }})
