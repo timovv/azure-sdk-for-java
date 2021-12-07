@@ -201,7 +201,7 @@ BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
 or
 
 ```java readme-sample-getBlobServiceClient2
-// Only one "?" is needed here. If the SAS token starts with "?", please removing one "?".
+// Only one "?" is needed here. If your SAS token starts with a "?", either remove it from the token or omit it from the snippet below.
 BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
     .endpoint("<your-storage-account-url>" + "?" + "<your-sasToken>")
     .buildClient();
@@ -228,7 +228,7 @@ BlobContainerClient blobContainerClient = new BlobContainerClientBuilder()
 or
 
 ```java readme-sample-getBlobContainerClient3
-// Only one "?" is needed here. If the SAS token starts with "?", please removing one "?".
+// Only one "?" is needed here. If your SAS token starts with a "?", either remove it from the token or omit it from the snippet below.
 BlobContainerClient blobContainerClient = new BlobContainerClientBuilder()
     .endpoint("<your-storage-account-url>" + "/" + "mycontainer" + "?" + "<your-sasToken>")
     .buildClient();
@@ -258,7 +258,7 @@ BlobClient blobClient = new BlobClientBuilder()
 or
 
 ```java readme-sample-getBlobClient3
-// Only one "?" is needed here. If the SAS token starts with "?", please removing one "?".
+// Only one "?" is needed here. If your SAS token starts with a "?", either remove it from the token or omit it from the snippet below.
 BlobClient blobClient = new BlobClientBuilder()
     .endpoint("<your-storage-account-url>" + "/" + "mycontainer" + "/" + "myblob" + "?" + "<your-sasToken>")
     .buildClient();
